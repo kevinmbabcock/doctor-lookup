@@ -4,11 +4,28 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title></title>
+    <title>Doctor Lookup</title>
   </head>
   <body>
     <div class="container">
-      
+      <div class="jumbotron">
+        <h1>Seattle Doctor Lookup</h1>
+      </div>
+      <form id="illness-lookup">
+        <div class="form-group">
+          <label for="illness">What is your issue?</label>
+          <input id="illness" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+      <form id="doctor-lookup">
+        <div class="form-control">
+          <label for="doctor">Search Doctor by Name</label>
+          <input id="doctor" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+
     </div>
   </body>
 </html>
