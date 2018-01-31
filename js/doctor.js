@@ -20,7 +20,7 @@ export class DoctorSearch {
           </li><br>`);
        })
     }).fail(function(error){
-      $('.errors').text(`There was an error processing your request. Please try again.`);
+      $('#search-results').text(`There was an error processing your request. Please try again.`);
     });
   }
 
@@ -40,7 +40,7 @@ export class DoctorSearch {
           </li><br>`);
 		   })
     }).fail(function(error){
-      $('.errors').text(`There was an error processing your request. Please try again.`);
+      $('#search-results').text(`There was an error processing your request. Please try again.`);
     });
   }
 }
