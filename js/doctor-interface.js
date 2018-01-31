@@ -1,15 +1,22 @@
-$(document).ready(function() {
+import { DoctorSearch } from './../js/doctor.js';
+
+$(document).ready(function(){
+
+  let doctorSearch = new DoctorLookup();
+
   $("#illness-lookup").submit(function(event) {
     event.preventDefault();
 
-    const illness = ("#illness").val();
+    const Illness = $("#illness").val();
+    $("ul#search-results").empty();
+    doctorSearch.byIllness(Illness);
   })
 
   $("#doctor-lookup").submit(function(event) {
     event.preventDefault();
 
-    const doctorName = ("#doctor").val();
-
-    const doctor = new Doctor(doctorName);
+    const Name = $("#doctor").val();
+    $("ul#search-results").empty();
+    doctorSearch.byName(Name);
   })
 })
