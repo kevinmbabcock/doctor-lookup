@@ -1,8 +1,8 @@
 import { DoctorSearch } from './../js/doctor.js';
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-  let doctorSearch = new DoctorLookup();
+  let doctorSearch = new DoctorSearch();
 
   $("#illness-lookup").submit(function(event) {
     event.preventDefault();
@@ -10,6 +10,7 @@ $(document).ready(function(){
     const Illness = $("#illness").val();
     $("ul#search-results").empty();
     doctorSearch.byIllness(Illness);
+    $("#results").show();
   })
 
   $("#doctor-lookup").submit(function(event) {
@@ -18,5 +19,6 @@ $(document).ready(function(){
     const Name = $("#doctor").val();
     $("ul#search-results").empty();
     doctorSearch.byName(Name);
+    $("#results").show();
   })
 })

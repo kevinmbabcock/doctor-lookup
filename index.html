@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
-    <!-- <script src="build/js/vendor.min.js"></script> -->
+    <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Seattle Doctor Lookup</title>
   </head>
@@ -17,7 +17,7 @@
           <br>
           <form id="illness-lookup">
             <div class="form-group">
-              <label for="illness">What is your issue?</label>
+              <label for="illness">Search by Medical Issue</label>
               <input id="illness" class="form-control" type="text">
             </div>
             <button type="submit" class="btn-primary">Submit</button>
@@ -26,7 +26,7 @@
           <br>
           <form id="doctor-lookup">
             <div class="form-group">
-              <label for="doctor">What is your issue?</label>
+              <label for="doctor">Search Doctor by Name</label>
               <input id="doctor" class="form-control" type="text">
             </div>
             <button type="submit" class="btn-primary">Submit</button>
@@ -35,10 +35,10 @@
         </div>
         <div class="col-md-2">
         </div>
-        <div class="col-md-5" id="search-results">
+        <div class="col-md-5" id="results">
           <h3>Here are all the doctors in the Seattle area that fit the search criteria:</h3s>
           <ul>
-            <h4><span id="search-results"></span></h4>
+            <span id="search-results"></span>
           </ul>
         </div>
       </div>
